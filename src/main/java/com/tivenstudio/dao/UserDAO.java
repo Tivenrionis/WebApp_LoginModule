@@ -60,6 +60,10 @@ public class UserDAO implements Dao<User> {
 			e.getMessage();
 			return null;
 		}
+		finally {
+			em.close();
+			emf.close();
+		}
 	}
 
 	@SuppressWarnings("unchecked")

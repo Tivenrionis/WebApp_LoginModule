@@ -24,7 +24,7 @@ public class PasswordFilter implements Filter {
 	
 		if(pass.equals(pass2))
 		{
-			System.out.println(pass+" "+pass2);
+		
 			chain.doFilter(request, response);
 			
 		}

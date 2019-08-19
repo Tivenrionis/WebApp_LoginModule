@@ -38,7 +38,7 @@ public class LoginController extends HttpServlet {
 			if (user.getPwd().equals(pass)) {
 
 				HttpSession session = req.getSession();
-				session.setAttribute("uname", uname);
+				session.setAttribute("uname", uname); 
 
 				resp.sendRedirect("welcome.jsp");
 
@@ -47,8 +47,7 @@ public class LoginController extends HttpServlet {
 				resp.sendRedirect("errorPage.jsp");
 			}
 		} else {
-
-			System.out.println("Nie udalo sie wyszukac obiektu");
+			
 			resp.sendRedirect("errorPage.jsp");
 		}
 

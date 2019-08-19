@@ -9,7 +9,7 @@
 </style>
 </head>
 <body>
-	<p align="center">Test Navigation Page:</p>
+	<div style="margin-top: 15%; "><p align="center">Test Navigation Page:</p>
 	<br>
 	<br>
 
@@ -28,7 +28,7 @@
 			If you dont have an account, please register <br> <input
 				type="submit" value="Register">
 		</form>
-	</div>
+	</div></div>
 
 
 
