@@ -36,7 +36,7 @@ public class NameFilter implements Filter {
 		String name = request.getParameter("name");
 
 		if (name.length() > 20 || name.length() == 0) {
-			request.setAttribute("wrong_name", "Enter the name");
+			request.setAttribute("wrong_name", "Name lenght exceeds 20 characters");
 			request.getRequestDispatcher("/registration.jsp").forward(request, response);
 			
 		}  else {

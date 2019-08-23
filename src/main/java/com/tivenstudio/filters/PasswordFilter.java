@@ -31,7 +31,7 @@ public class PasswordFilter implements Filter {
 		else
 		{
 			
-			request.setAttribute("pass", "Enter the password");
+			request.setAttribute("pass", "Wrong password");
 			request.getRequestDispatcher("registration.jsp").forward(request, response);
 		}
 		

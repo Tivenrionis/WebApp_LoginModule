@@ -21,7 +21,7 @@ public class SurnameFilter implements Filter {
 		String name = request.getParameter("surname");;
 
 		if (name.length() > 40 || name.length() == 0) {
-			request.setAttribute("wrong_surname", "Enter the surname");
+			request.setAttribute("wrong_surname", "Surname lenght exceeds 40 characters");
 			request.getRequestDispatcher("/registration.jsp").forward(request, response);
 			
 		} 
